@@ -7,14 +7,15 @@ export default [
     plugins: [
       buble({ transforms: { dangerousForOf: true } })
     ],
-    sourceMap: true,
     output: [
       {
         file: "dist/chavascript-parser.js",
+        sourcemap: true,
         formats: "umd"
       },
       {
         file: "dist/chavascript-parser.mjs",
+        sourcemap: true,
         formats: "es"
       }
     ]
