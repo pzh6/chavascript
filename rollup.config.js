@@ -5,18 +5,19 @@ export default [
     input: "src/index.js",
     moduleName: "chavascript-parser",
     plugins: [
-      buble({ transforms: { dangerousForOf: true } })
+      buble({transforms: { dangerousForOf: true }})
     ],
     output: [
       {
         file: "dist/chavascript-parser.js",
+        name: "chavascript-parser",
         sourcemap: true,
-        formats: "umd"
+        format: "umd"
       },
       {
         file: "dist/chavascript-parser.mjs",
         sourcemap: true,
-        formats: "es"
+        format: "es"
       }
     ]
   }
