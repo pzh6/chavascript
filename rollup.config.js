@@ -5,7 +5,12 @@ export default [
     input: "src/index.js",
     moduleName: "chavascript-parser",
     plugins: [
-      buble({transforms: { dangerousForOf: true }})
+      buble({
+        transforms: {
+          dangerousForOf: true,
+          asyncAwait: false
+        }
+      })
     ],
     output: [
       {

@@ -37,6 +37,8 @@ export const localizationSettings = ls
 
 export const version = "6.1.1"
 
+import argv from "./cli/cli"
+
 // The main exported interface (under `self.acorn` when in the
 // browser) is a `parse` function that takes a code string and
 // returns an abstract syntax tree as specified by [Mozilla parser
